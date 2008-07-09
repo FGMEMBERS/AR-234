@@ -5,7 +5,7 @@
   <sim include="Nasal/views.xml">
 
     <status>alpha</status>
-    <author>Michael Koehne (FDM) / BARANGER Emmanuel (3D)</author>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
 
     <fuel-fraction>1.0</fuel-fraction>
 
