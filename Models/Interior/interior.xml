@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>siege</object-name>
+    <object-name>fondsiege</object-name>
+    <object-name>dossier</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.362 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.023 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/AR-234/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.046 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.088 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

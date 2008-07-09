@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panelG</object-name>
+    <object-name>panelD</object-name>
+    <object-name>fond</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.365 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.237 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> -0.367 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.365 </x-m>
+      <y-m>  0.105 </y-m>
+      <z-m>  0.230 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.365 </x-m>
+      <y-m> -0.105 </y-m>
+      <z-m>  0.230 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.368 </x-m>
+      <y-m> -0.097 </y-m>
+      <z-m>  0.139 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.368 </x-m>
+      <y-m>  0.097 </y-m>
+      <z-m>  0.139 </z-m>
+    </offsets>
+  </model>
+
+  <!-- THROTTLE 1 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/throttle/throttleL.xml</path>
+    <offsets>
+      <x-m> -0.375 </x-m>
+      <y-m>  0.213 </y-m>
+      <z-m>  0.130 </z-m>
+    </offsets>
+  </model>
+
+  <!-- THROTTLE 2 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/throttle/throttleR.xml</path>
+    <offsets>
+      <x-m> -0.375 </x-m>
+      <y-m>  0.300 </y-m>
+      <z-m>  0.126 </z-m>
+    </offsets>
+  </model>
+
+  <!-- MAN -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/man/man.xml</path>
+    <offsets>
+      <x-m> -0.375 </x-m>
+      <y-m> -0.256 </y-m>
+      <z-m>  0.131 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PRESSION ENGINE 1 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/pression/pressionL.xml</path>
+    <offsets>
+      <x-m>  0.275 </x-m>
+      <y-m>  0.316 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+ 
+  <!-- PRESSION ENGINE 2 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/pression/pressionR.xml</path>
+    <offsets>
+      <x-m>  0.275 </x-m>
+      <y-m>  0.401 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- EGT ENGINE 1 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/egt/egtL.xml</path>
+    <offsets>
+      <x-m>  0.180 </x-m>
+      <y-m>  0.316 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+ 
+  <!-- EGT ENGINE 2 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/egt/egtR.xml</path>
+    <offsets>
+      <x-m>  0.180 </x-m>
+      <y-m>  0.401 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- FUEL 1 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m>  0.085 </x-m>
+      <y-m>  0.316 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+ 
+  <!-- FUEL 2 -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/fuel/fuelR.xml</path>
+    <offsets>
+      <x-m>  0.085 </x-m>
+      <y-m>  0.401 </y-m>
+      <z-m> -0.189 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

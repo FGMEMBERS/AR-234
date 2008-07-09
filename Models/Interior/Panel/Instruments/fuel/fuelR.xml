@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>fuel.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>minute</object-name>
+  <property>/consumables/fuel/tank[1]/level-gal_us</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>30</ind>
+    <dep>22</dep>
+   </entry>
+   <entry>
+    <ind>60</ind>
+    <dep>45</dep>
+   </entry>
+   <entry>
+    <ind>90</ind>
+    <dep>85</dep>
+   </entry>
+   <entry>
+    <ind>100</ind>
+    <dep>90</dep>
+   </entry>
+  </interpolation>
+  <center>
+    <x-m>  0.001 </x-m>
+    <y-m>  0.000 </y-m>
+    <z-m> -0.013 </z-m>
+  </center>
+  <axis>
+   <x> -1 </x>
+   <y>  0 </y>
+   <z>  0 </z>
+  </axis>
+ </animation>
+
+</PropertyList>

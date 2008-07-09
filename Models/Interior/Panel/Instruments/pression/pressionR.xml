@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>pression.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>minute</object-name>
+  <property>/engines/engine[1]/oilp-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>-30</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
