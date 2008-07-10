@@ -35,7 +35,7 @@
       </key>
     </help>
 
-    <menubar include="Gui/ar234-menu.xml"/>
+    <menubar include="Dialogs/ar234-menu.xml"/>
 
   </sim>
 
@@ -74,6 +74,7 @@
 
   <nasal>
     <doors>
+      <file>Aircraft/AR-234/Nasal/light.nas</file>
       <file>Aircraft/AR-234/Nasal/doors.nas</file>
       <file>Aircraft/AR-234/Nasal/liveries.nas</file>
     </doors>
