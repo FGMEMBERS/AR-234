@@ -10,6 +10,8 @@
     <object-name>siege</object-name>
     <object-name>fondsiege</object-name>
     <object-name>dossier</object-name>
+    <object-name>piedvolant</object-name>
+    <object-name>volant</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -33,6 +35,58 @@
       <z-m> -0.088 </z-m>
     </offsets>
   </model>
+
+  <!-- Horloge -->
+  <model>
+    <name>Clock</name>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -1.173 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.012 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>Yoke</name>
+    <object-name>Clock</object-name>
+    <object-name>piedvolant</object-name>
+    <object-name>volant</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Yoke</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>10.0</factor>
+    <center>
+      <x-m> -1.261 </x-m>
+      <y-m>  0.197 </y-m>
+      <z-m> -0.483 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>volant</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>40.0</factor>
+    <center>
+      <x-m> -1.229 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.015 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

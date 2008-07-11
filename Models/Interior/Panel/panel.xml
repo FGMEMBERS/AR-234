@@ -10,6 +10,8 @@
     <object-name>panelG</object-name>
     <object-name>panelD</object-name>
     <object-name>fond</object-name>
+    <object-name>manetteL</object-name>
+    <object-name>manetteR</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -104,6 +106,16 @@
     </offsets>
   </model>
 
+  <!-- HEADING -->
+  <model>
+    <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/Heading/heading.xml</path>
+    <offsets>
+      <x-m> -0.196 </x-m>
+      <y-m> -0.248 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+
   <!-- PRESSION ENGINE 1 -->
   <model>
     <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/pression/pressionL.xml</path>
@@ -181,6 +193,40 @@
       <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manetteL</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor>88</factor>
+    <center>
+      <x-m>  0.280 </x-m>
+      <y-m> -0.354 </y-m>
+      <z-m> -0.267 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manetteR</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor>88</factor>
+    <center>
+      <x-m>  0.280 </x-m>
+      <y-m> -0.340 </y-m>
+      <z-m> -0.267 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 
