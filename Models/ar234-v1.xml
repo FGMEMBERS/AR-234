@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/AR-234/Models/ar234.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Les patins -->
+  <model>
+    <path>Aircraft/AR-234/Models/patins.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le chariot -->
+  <model>
+    <path>Aircraft/AR-234/Models/chariot.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

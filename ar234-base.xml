@@ -9,17 +9,6 @@
 
     <fuel-fraction>1.0</fuel-fraction>
 
-    <startup>
-     <splash-texture>Aircraft/AR-234/ar234-splash.png</splash-texture>
-    </startup>
-
-    <model>
-     <path>Aircraft/AR-234/Models/ar234.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
-
     <sound>
       <audible>true</audible>
       <path>Aircraft/AR-234/Sounds/ar234-sound.xml</path>

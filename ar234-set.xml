@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="ar234-jsbsim-set.xml"> -->
-<PropertyList include="ar234-yasim-set.xml">
+<!-- <PropertyList include="ar234-v1-jsbsim-set.xml"> -->
+<!-- <PropertyList include="ar234-v9-jsbsim-set.xml"> -->
+<PropertyList include="ar234-v1-yasim-set.xml">
+<!-- <PropertyList include="ar234-v9-yasim-set.xml"> -->
 
   <sim>
     <description>Arado Ar 234</description>
