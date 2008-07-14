@@ -21,8 +21,8 @@
 
     <condition>
       <greater-than>
-        <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
-        <value>20</value>
+        <property>/engines/engine[0]/n1</property>
+        <value>50</value>
       </greater-than>
     </condition>
 
@@ -89,7 +89,7 @@
         <value>10</value>
       </life-sec>
         
-      <mass-kg>0.25</mass-kg>
+      <mass-kg>0.5</mass-kg>
       <radius-m>0.5</radius-m>
     </particle>
       
