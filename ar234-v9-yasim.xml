@@ -156,6 +156,16 @@
       <control-speed control="EXTEND" transition-time="7"/>
 </gear>
 
+<!-- Patte arrière -->
+<gear x="-5.651" y="0" z="-0.756"
+      compression="0.4"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
+</gear>
+
 <!-- Internal tanks 
  2*280 liter wings
  -->

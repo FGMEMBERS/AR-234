@@ -46,6 +46,7 @@
     <object-name>periscope</object-name>
     <object-name>tourverriere</object-name>
     <object-name>canopy</object-name>
+    <object-name>pate</object-name>
 
     <object-name>cables</object-name>
     <object-name>bruleG</object-name>
@@ -96,6 +97,7 @@
     <object-name>periscope</object-name>
     <object-name>tourverriere</object-name>
     <object-name>canopy</object-name>
+    <object-name>pate</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>

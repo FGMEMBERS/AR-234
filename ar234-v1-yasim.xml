@@ -118,25 +118,94 @@
     <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
 </jet>
 
-<!-- nose -->
+<!-- Trolley nose wheel -->
 <gear x="5.185" y="0" z="-2.920" 
       compression="0.30" 
       spring="1" 
       damp="2" >
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="0.1"/>
+      <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 </gear>
 
-<!-- left main -->
+<!-- left main wheel -->
 <gear x="-0.748" y="1.458" z="-2.906" 
       compression="0.30" 
       spring="1" 
       damp="2" >
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="0.1"/>
+      <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
 </gear>
 
-<!-- right main -->
+<!-- right main wheel -->
 <gear x="-0.748" y="-1.458" z="-2.906" 
       compression="0.30" 
       spring="1" 
       damp="2" >
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="0.1"/>
+      <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+</gear>
+
+<!-- Patte arrière -->
+<gear x="-5.651" y="0" z="-0.756"
+      compression="0.4"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2">
+</gear>
+
+<!-- Patin central -->
+<!-- Avant -->
+<gear x="-0.693" y="0" z="-1.706"
+      compression="0.4"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
+</gear>
+
+<!-- Centre -->
+<gear x="1.373" y="0" z="-1.663"
+      compression="0.2"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
+</gear>
+
+<!-- Arrière -->
+<gear x="3.418" y="0" z="-1.528"
+      compression="0.2"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
+</gear>
+
+<!-- Patin moteur gauche -->
+<gear x="0.300" y="1.950" z="-1.348"
+      compression="0.2"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
+</gear>
+
+<!-- Patin moteur droit -->
+<gear x="0.300" y="-1.950" z="-1.348"
+      compression="0.2"
+      spring="1"
+      damp="0.6"
+      sfric="0.3"
+      dfric="0.2"
+      ignored-by-solver="1">
 </gear>
 
 <!-- Internal tanks 

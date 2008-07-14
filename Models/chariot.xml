@@ -43,10 +43,10 @@
     <type>select</type>
     <name>Trolley</name>
     <condition>
-      <less-than>
-        <property>position/altitude-agl-ft</property>
-        <value>12</value>
-      </less-than>
+      <equals>
+        <property>gear/gear/position-norm</property>
+        <value>1</value>
+      </equals>
     </condition>
   </animation>
 
@@ -96,7 +96,7 @@
     <type>spin</type>
     <object-name>roueCG</object-name>
     <property>gear/gear[1]/rollspeed-ms</property>
-    <factor> -30 </factor>
+    <factor> 30 </factor>
     <center>
       <x-m>  0.748 </x-m>
       <y-m> -1.458 </y-m>
@@ -113,7 +113,7 @@
     <type>spin</type>
     <object-name>roueCD</object-name>
     <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> -30 </factor>
+    <factor> 30 </factor>
     <center>
       <x-m>  0.748 </x-m>
       <y-m>  1.458 </y-m>
