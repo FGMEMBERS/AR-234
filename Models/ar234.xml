@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -56,11 +56,20 @@
   </animation>
   
   <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
+  <animation>
     <type>noshadow</type>
     <object-name>cables</object-name>
     <object-name>bruleG</object-name>
     <object-name>bruleD</object-name>
     <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
   </animation>
 
   <animation>
@@ -137,9 +146,9 @@
   <model>
     <path>Aircraft/AR-234/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> -4.003 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.448 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 

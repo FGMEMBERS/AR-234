@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -12,7 +12,6 @@
     <object-name>brasD</object-name>
     <object-name>avantbrasG</object-name>
     <object-name>avantbrasD</object-name>
-    <object-name>manche</object-name>
     <object-name>cuisseG</object-name>
     <object-name>cuisseD</object-name>
     <object-name>jambeG</object-name>
@@ -20,22 +19,22 @@
     <object-name>piedG</object-name>
     <object-name>piedD</object-name>
     <object-name>masques</object-name>
+    <object-name>lunettes</object-name>
 
     <!-- Objets transparents -->
-    <object-name>lunettes</object-name>
+    <object-name>glass</object-name>
   </animation>
 
   <animation>
-    <name>AnimeTete</name>
+    <name>AnimeLunettes</name>
     <object-name>lunettes</object-name>
-    <object-name>tete</object-name>
-    <object-name>masque</object-name>
+    <object-name>glass</object-name>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>lunettes</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <object-name>AnimeLunettes</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
     <factor> 45</factor>
     <center>
       <x-m> 0.273 </x-m>
@@ -50,9 +49,17 @@
   </animation>
 
   <animation>
+    <name>AnimeTete</name>
+    <object-name>lunettes</object-name>
+    <object-name>tete</object-name>
+    <object-name>masque</object-name>
+    <object-name>glass</object-name>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
-    <property>controls/flight/elevator</property>
+    <property>/controls/flight/elevator</property>
     <factor> -15 </factor> 
     <center>
       <x-m>  0.300 </x-m>
@@ -69,7 +76,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>-25</factor>
     <center>
       <x-m>  0.300 </x-m>
@@ -86,7 +93,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
-    <property>surface-positions/left-aileron-pos-norm</property>
+    <property>/surface-positions/left-aileron-pos-norm</property>
     <factor> -10.0</factor>
     <center>
       <x-m>  0.300 </x-m>

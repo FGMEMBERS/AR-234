@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -14,15 +14,31 @@
     <object-name>volant</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
   </animation>
 
   <!-- Panel -->
   <model>
     <path>Aircraft/AR-234/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -1.362 </x-m>
+      <x-m> -5.365 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.023 </z-m>
+      <z-m> -0.471 </z-m>
     </offsets>
   </model>
 
@@ -30,9 +46,9 @@
   <model>
     <path>Aircraft/AR-234/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -1.046 </x-m>
+      <x-m> -5.049 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.088 </z-m>
+      <z-m> -0.536 </z-m>
     </offsets>
   </model>
 
@@ -41,9 +57,9 @@
     <name>Clock</name>
     <path>Aircraft/AR-234/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m> -1.173 </x-m>
+      <x-m> -5.176 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.012 </z-m>
+      <z-m> -0.436 </z-m>
     </offsets>
   </model>
 
@@ -57,12 +73,12 @@
   <animation>
     <type>rotate</type>
     <object-name>Yoke</object-name>
-    <property>controls/flight/elevator</property>
+    <property>/controls/flight/elevator</property>
     <factor>10.0</factor>
     <center>
-      <x-m> -1.261 </x-m>
+      <x-m> -5.264 </x-m>
       <y-m>  0.197 </y-m>
-      <z-m> -0.483 </z-m>
+      <z-m> -0.931 </z-m>
     </center>
     <axis>
       <x>  0 </x>
@@ -74,17 +90,32 @@
   <animation>
     <type>rotate</type>
     <object-name>volant</object-name>
-    <property>controls/flight/aileron</property>
+    <property>/controls/flight/aileron</property>
     <factor>40.0</factor>
     <center>
-      <x-m> -1.229 </x-m>
+      <x-m> -5.232 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.015 </z-m>
+      <z-m> -0.433 </z-m>
     </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intcanopytrans</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 85 </factor>
+    <axis>
+      <x1-m> -4.432 </x1-m>
+      <y1-m>  0.544 </y1-m>
+      <z1-m> -0.016 </z1-m>
+      <x2-m> -5.035 </x2-m>
+      <y2-m>  0.477 </y2-m>
+      <z2-m> -0.016 </z2-m>
     </axis>
   </animation>
 

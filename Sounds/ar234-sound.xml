@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -19,6 +19,8 @@
         <property>/engines/engine[0]/n1</property>
         <factor>0.2</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <engine>
@@ -37,6 +39,8 @@
         <factor>0.02</factor>
         <offset>-0.1</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <engine>
@@ -54,6 +58,8 @@
         <property>/engines/engine[1]/n1</property>
         <factor>0.2</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <engine>
@@ -72,6 +78,8 @@
         <factor>0.02</factor>
         <offset>-0.1</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <rumble>
@@ -89,6 +97,8 @@
       <pitch>
         <property>/gear/gear[0]/rollspeed-ms</property>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <rumble>
@@ -103,6 +113,8 @@
         <type>log</type>
         <factor>0.12</factor>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <rumble>
@@ -117,6 +129,8 @@
         <type>log</type>
         <factor>0.12</factor>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <gear>
@@ -129,6 +143,8 @@
         <offset>1.0</offset>
         <factor>-0.001</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -140,6 +156,8 @@
           <value>0</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -151,6 +169,8 @@
           <value>1</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -163,6 +183,8 @@
         <offset>1.0</offset>
         <factor>-0.001</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -174,6 +196,8 @@
           <value>0</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -185,6 +209,8 @@
           <value>1</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -197,6 +223,8 @@
         <offset>1.0</offset>
         <factor>-0.001</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -208,6 +236,8 @@
           <value>0</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -219,6 +249,8 @@
           <value>1</value>
         </equals>
       </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <squeal>
@@ -245,6 +277,8 @@
         <factor>0.0025</factor>
         <offset>1.2</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <squeal>
@@ -271,6 +305,8 @@
         <factor>0.0025</factor>
         <offset>1.2</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <squeal>
@@ -297,6 +333,8 @@
         <factor>0.0025</factor>
         <offset>1.2</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <flap>
@@ -307,6 +345,8 @@
       <volume>
         <factor>0.15</factor>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
 
     <flap>
@@ -317,47 +357,9 @@
       <volume>
         <factor>0.25</factor>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
-
-    <spoiler>
-      <name>spoilers</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/left-lower-spoiler-pos-norm</property>
-      <volume>
-        <factor>0.15</factor>
-      </volume>
-    </spoiler>
-
-    <spoiler>
-      <name>spoilers</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/left-upper-spoiler-pos-norm</property>
-      <volume>
-        <factor>0.15</factor>
-      </volume>
-    </spoiler>
-
-    <spoiler>
-      <name>spoilers</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/right-lower-spoiler-pos-norm</property>
-      <volume>
-        <factor>0.25</factor>
-      </volume>
-    </spoiler>
-
-    <spoiler>
-      <name>spoilers</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>/surface-positions/right-upper-spoiler-pos-norm</property>
-      <volume>
-        <factor>0.25</factor>
-      </volume>
-    </spoiler>
 
     <wind>
       <name>wind</name>
@@ -375,6 +377,8 @@
         <factor>0.01</factor>
         <offset>1.25</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </wind>
 
     <stall>
@@ -385,14 +389,9 @@
         <property>/velocities/airspeed-kt</property>
         <min>90.0</min>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </stall>
-
-<!-- no binding yet?
-    <click>
-      <name>click</name>
-      <path>Sounds/click.wav</path>
-    </click>
--->
 
   </fx>
 
