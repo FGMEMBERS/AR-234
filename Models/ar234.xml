@@ -47,6 +47,7 @@
     <object-name>tourverriere</object-name>
     <object-name>canopy</object-name>
     <object-name>pate</object-name>
+    <object-name>trous</object-name>
 
     <object-name>cables</object-name>
     <object-name>bruleG</object-name>
@@ -107,6 +108,7 @@
     <object-name>tourverriere</object-name>
     <object-name>canopy</object-name>
     <object-name>pate</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -451,12 +453,30 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/Allegro-2000/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -0.911 </x-m>
+      <y-m> -7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
   <!-- Lumière verte -->
   <model>
     <name>RightLight</name>
     <path>Aircraft/AR-234/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m> -0.901 </x-m>
+      <y-m>  7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Allegro-2000/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -0.911 </x-m>
       <y-m>  7.014 </y-m>
       <z-m>  0.090 </z-m>
     </offsets>
