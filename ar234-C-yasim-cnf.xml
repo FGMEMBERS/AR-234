@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="ar234-base.xml">
+
+  <sim>
+
+    <description>Arado Ar 234 C (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>ar234-C-yasim</aero>
+
+    <model>
+     <path>Aircraft/AR-234/Models/ar234-C.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+     <splash-texture>Aircraft/AR-234/Splash/ar234-C-splash.png</splash-texture>
+    </startup>
+
+  </sim>
+
+</PropertyList>
