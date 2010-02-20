@@ -454,7 +454,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Allegro-2000/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/AR-234/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -0.911 </x-m>
       <y-m> -7.014 </y-m>
@@ -474,7 +474,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Allegro-2000/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/AR-234/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -0.911 </x-m>
       <y-m>  7.014 </y-m>
