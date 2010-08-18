@@ -54,7 +54,7 @@
   <!-- Les flammes -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammesG2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesG2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m> -2.838 </y-m>
@@ -64,7 +64,7 @@
 
   <!-- Droite -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammesD2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesD2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m>  2.838 </y-m>
@@ -75,7 +75,19 @@
   <!-- Particules OSG -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/trailL2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailL2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeL2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m> -2.838 </y-m>
@@ -88,7 +100,19 @@
 
   <!-- Droite -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/trailR2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailR2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeR2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m>  2.838 </y-m>

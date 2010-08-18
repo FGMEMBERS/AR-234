@@ -57,23 +57,6 @@
   </animation>
   
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>cables</object-name>
-    <object-name>bruleG</object-name>
-    <object-name>bruleD</object-name>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>antenne</object-name>
@@ -144,6 +127,56 @@
 -->
   </animation>
 
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>antenne</object-name>
+    <object-name>ailes</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>poignees</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
+    <object-name>moteurG</object-name>
+    <object-name>centremoteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>centremoteurD</object-name>
+    <object-name>periscope</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>canopy</object-name>
+    <object-name>pate</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>cables</object-name>
+    <object-name>bruleG</object-name>
+    <object-name>bruleD</object-name>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/AR-234/Models/Interior/interior.xml</path>
@@ -157,7 +190,7 @@
   <!-- Les flammes -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammesG.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesG.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m> -1.950 </y-m>
@@ -167,7 +200,7 @@
 
   <!-- Droite -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammesD.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesD.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m>  1.950 </y-m>
@@ -178,7 +211,7 @@
   <!-- Particules OSG -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/trailL.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailL.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m> -1.950 </y-m>
@@ -189,13 +222,61 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -1.950 </y-m>
+      <z-m> -0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m> -7.014 </y-m>
+      <z-m>  0.090 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Droite -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/trailR.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailR.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m>  1.950 </y-m>
       <z-m> -0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeR.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  1.950 </y-m>
+      <z-m> -0.553 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m>  7.014 </y-m>
+      <z-m>  0.090 </z-m>
       <roll-deg>    0 </roll-deg>
       <pitch-deg>   0 </pitch-deg>
       <heading-deg> 0 </heading-deg>
@@ -454,7 +535,7 @@
   </model>
 
   <model>
-    <path>Aircraft/AR-234/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/AR-234/Models/lights/StrobeWhite.xml</path>
     <offsets>
       <x-m> -0.911 </x-m>
       <y-m> -7.014 </y-m>
@@ -474,7 +555,7 @@
   </model>
 
   <model>
-    <path>Aircraft/AR-234/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/AR-234/Models/lights/StrobeWhite.xml</path>
     <offsets>
       <x-m> -0.911 </x-m>
       <y-m>  7.014 </y-m>

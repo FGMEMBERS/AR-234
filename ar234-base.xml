@@ -14,7 +14,19 @@
       <path>Aircraft/AR-234/Sounds/ar234-sound.xml</path>
     </sound>
 
-    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
 
     <help>
       <title>Arado Ar 234</title>
