@@ -9,7 +9,7 @@
     <object-name>panel</object-name>
     <object-name>panelG</object-name>
     <object-name>panelD</object-name>
-    <object-name>fond</object-name>
+    <object-name>souspanel</object-name>
     <object-name>manetteL</object-name>
     <object-name>manetteR</object-name>
 
@@ -123,9 +123,9 @@
       <x-m>  0.275 </x-m>
       <y-m>  0.316 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
  
@@ -136,9 +136,9 @@
       <x-m>  0.275 </x-m>
       <y-m>  0.401 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -149,9 +149,9 @@
       <x-m>  0.180 </x-m>
       <y-m>  0.316 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
  
@@ -162,9 +162,9 @@
       <x-m>  0.180 </x-m>
       <y-m>  0.401 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -175,9 +175,9 @@
       <x-m>  0.085 </x-m>
       <y-m>  0.316 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
  
@@ -188,9 +188,9 @@
       <x-m>  0.085 </x-m>
       <y-m>  0.401 </y-m>
       <z-m> -0.189 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -198,7 +198,7 @@
     <type>rotate</type>
     <object-name>manetteL</object-name>
     <property>controls/engines/engine[0]/throttle</property>
-    <factor>88</factor>
+    <factor> 88 </factor>
     <center>
       <x-m>  0.280 </x-m>
       <y-m> -0.354 </y-m>
@@ -215,7 +215,7 @@
     <type>rotate</type>
     <object-name>manetteR</object-name>
     <property>controls/engines/engine[1]/throttle</property>
-    <factor>88</factor>
+    <factor> 88 </factor>
     <center>
       <x-m>  0.280 </x-m>
       <y-m> -0.340 </y-m>

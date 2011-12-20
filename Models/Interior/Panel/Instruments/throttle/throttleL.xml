@@ -21,7 +21,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
@@ -42,8 +42,8 @@
     <object-name>needle</object-name>
     <property>/engines/engine[0]/n2</property>
     <interpolation>
-      <entry><ind>0</ind><dep>0</dep></entry>
-      <entry><ind>100</ind><dep>330</dep></entry>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 100 </ind><dep> 330 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>

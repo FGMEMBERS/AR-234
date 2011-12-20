@@ -23,7 +23,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
@@ -45,7 +45,7 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.11</factor>
+    <factor> 0.11 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -57,7 +57,7 @@
     <type>rotate</type>
     <object-name>kilodisk</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.011</factor>
+    <factor> 0.011 </factor>
     <center>
       <x-m>  0.00 </x-m>
       <y-m>  0.00 </y-m>

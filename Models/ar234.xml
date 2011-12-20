@@ -7,13 +7,28 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/AR-234/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>antenne</object-name>
     <object-name>ailes</object-name>
@@ -36,19 +51,21 @@
     <object-name>porteD1</object-name>
     <object-name>porteD2</object-name>
     <object-name>moteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>periscope</object-name>
+
+    <object-name>canopy</object-name>
     <object-name>centremoteurG</object-name>
     <object-name>heliceG1</object-name>
     <object-name>heliceG2</object-name>
-    <object-name>moteurD</object-name>
     <object-name>centremoteurD</object-name>
     <object-name>heliceD1</object-name>
     <object-name>heliceD2</object-name>
-    <object-name>periscope</object-name>
     <object-name>tourverriere</object-name>
-    <object-name>canopy</object-name>
     <object-name>pate</object-name>
     <object-name>trous</object-name>
 
+    <!-- Objets transparents -->
     <object-name>cables</object-name>
     <object-name>bruleG</object-name>
     <object-name>bruleD</object-name>
@@ -80,16 +97,17 @@
     <object-name>porteD1</object-name>
     <object-name>porteD2</object-name>
     <object-name>moteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>periscope</object-name>
+
+    <object-name>canopy</object-name>
     <object-name>centremoteurG</object-name>
     <object-name>heliceG1</object-name>
     <object-name>heliceG2</object-name>
-    <object-name>moteurD</object-name>
     <object-name>centremoteurD</object-name>
     <object-name>heliceD1</object-name>
     <object-name>heliceD2</object-name>
-    <object-name>periscope</object-name>
     <object-name>tourverriere</object-name>
-    <object-name>canopy</object-name>
     <object-name>pate</object-name>
     <object-name>trous</object-name>
 
@@ -151,13 +169,8 @@
     <object-name>porteD1</object-name>
     <object-name>porteD2</object-name>
     <object-name>moteurG</object-name>
-    <object-name>centremoteurG</object-name>
     <object-name>moteurD</object-name>
-    <object-name>centremoteurD</object-name>
     <object-name>periscope</object-name>
-    <object-name>tourverriere</object-name>
-    <object-name>canopy</object-name>
-    <object-name>pate</object-name>
   </effect>
 
   <animation>
@@ -180,11 +193,6 @@
   <!-- Interieur -->
   <model>
     <path>Aircraft/AR-234/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Les flammes -->
@@ -216,9 +224,6 @@
       <x-m>  0.657 </x-m>
       <y-m> -1.950 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -228,9 +233,6 @@
       <x-m>  0.657 </x-m>
       <y-m> -1.950 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -240,9 +242,6 @@
       <x-m> -0.901 </x-m>
       <y-m> -7.014 </y-m>
       <z-m>  0.090 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -253,9 +252,6 @@
       <x-m>  0.657 </x-m>
       <y-m>  1.950 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -265,9 +261,6 @@
       <x-m>  0.657 </x-m>
       <y-m>  1.950 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -277,9 +270,6 @@
       <x-m> -0.901 </x-m>
       <y-m>  7.014 </y-m>
       <z-m>  0.090 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -356,8 +346,8 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
-    <factor>15</factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 15 </factor>
     <center>
       <x-m>  5.269 </x-m>
       <y-m>  0.000 </y-m>
@@ -374,8 +364,8 @@
   <animation>
     <type>rotate</type>
     <object-name>gouverne</object-name>
-    <property>controls/flight/rudder</property>
-    <factor>20</factor>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 20 </factor>
     <center>
       <x-m> 5.548 </x-m>
       <y-m> 0.000 </y-m>
@@ -393,7 +383,7 @@
     <type>rotate</type>
     <object-name>aileronG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>25.0</factor>
+    <factor> 25 </factor>
     <axis>
       <x1-m> -0.441 </x1-m>
       <y1-m> -6.726 </y1-m>
@@ -408,7 +398,7 @@
     <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>25.0</factor>
+    <factor> 25 </factor>
     <axis>
       <x1-m> -0.152 </x1-m>
       <y1-m>  4.113 </y1-m>
@@ -424,7 +414,7 @@
     <type>rotate</type>
     <object-name>voletG1</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50.0</factor>
+    <factor> -50 </factor>
     <axis>
       <x1-m> -0.214 </x1-m>
       <y1-m> -0.708 </y1-m>
@@ -439,7 +429,7 @@
     <type>rotate</type>
     <object-name>voletG2</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50.0</factor>
+    <factor> -50 </factor>
     <axis>
       <x1-m> -0.256 </x1-m>
       <y1-m> -2.447 </y1-m>
@@ -454,7 +444,7 @@
     <type>rotate</type>
     <object-name>voletD1</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50.0</factor>
+    <factor> -50 </factor>
     <axis>
       <x1-m> -0.214 </x1-m>
       <y1-m>  1.512 </y1-m>
@@ -469,7 +459,7 @@
     <type>rotate</type>
     <object-name>voletD2</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-50.0</factor>
+    <factor> -50 </factor>
     <axis>
       <x1-m> -0.356 </x1-m>
       <y1-m>  4.090 </y1-m>
@@ -574,3 +564,4 @@
   </model>
 
 </PropertyList>
+

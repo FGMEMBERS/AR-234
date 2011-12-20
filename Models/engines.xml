@@ -5,50 +5,78 @@
   <path>engines.ac</path>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>moteurC</object-name>
     <object-name>cachemoteurs</object-name>
+
     <object-name>centremoteurC</object-name>
-    <object-name>trousC</object-name>
     <object-name>heliceCG2</object-name>
     <object-name>heliceCG1</object-name>
     <object-name>heliceCD1</object-name>
     <object-name>heliceCD2</object-name>
+    <object-name>trousC</object-name>
 
+    <!-- Objets transparents -->
     <object-name>bruleCG</object-name>
     <object-name>bruleCD</object-name>
   </animation>
   
   <animation>
-    <type>noshadow</type>
-    <object-name>bruleCG</object-name>
-    <object-name>bruleCD</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>moteurC</object-name>
     <object-name>cachemoteurs</object-name>
+
     <object-name>centremoteurC</object-name>
-    <object-name>trousC</object-name>
     <object-name>heliceCG2</object-name>
     <object-name>heliceCG1</object-name>
     <object-name>heliceCD1</object-name>
     <object-name>heliceCD2</object-name>
+    <object-name>trousC</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
 
-  <animation>
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>moteurC</object-name>
     <object-name>cachemoteurs</object-name>
-    <object-name>centremoteurC</object-name>
-    <object-name>trousC</object-name>
-    <object-name>heliceCG2</object-name>
-    <object-name>heliceCG1</object-name>
-    <object-name>heliceCD1</object-name>
-    <object-name>heliceCD2</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>bruleCG</object-name>
+    <object-name>bruleCD</object-name>
   </animation>
 
   <!-- Les flammes -->
@@ -80,9 +108,6 @@
       <x-m>  0.657 </x-m>
       <y-m> -2.838 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -92,9 +117,6 @@
       <x-m>  0.657 </x-m>
       <y-m> -2.838 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -105,9 +127,6 @@
       <x-m>  0.657 </x-m>
       <y-m>  2.838 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -117,9 +136,6 @@
       <x-m>  0.657 </x-m>
       <y-m>  2.838 </y-m>
       <z-m> -0.553 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -215,3 +231,4 @@
   </animation>
 
 </PropertyList>
+
