@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!--  Arado AR 234 C
 
@@ -204,7 +204,7 @@
 
   <weight x="4.795" y="0" z="-0.642" mass-prop="/yasim/ar234/pilot-lb"/>
 
-  <!-- CG theorique x=0.890 y=0.0 z=0.0 -->
+  <!-- Mass displacment -->
   <ballast x="0.6" y="0.0" z="-0.5" mass="1000"/>
 
 </airplane>

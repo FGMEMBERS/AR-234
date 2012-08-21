@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- <PropertyList include="ar234-C-jsbsim-cnf.xml"> -->
 <PropertyList include="ar234-C-yasim-cnf.xml">
 
   <sim>
 
-    <description>Arado Ar 234 C (with Wheels)</description>
+    <description>Arado Ar 234 C (with Wheels - YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
 
     <rating>
