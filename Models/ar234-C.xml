@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/AR-234/Models/ar234.xml</path>
+  </model>
+
+  <!-- Les roues -->
+  <model>
+    <path>Aircraft/AR-234/Models/wheels.xml</path>
+  </model>
+
+  <!-- Les moteurs supplémentaires -->
+  <model>
+    <path>Aircraft/AR-234/Models/engines.xml</path>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/AR-234/Models/shadowC.xml</path>
+    <offsets>
+      <x-m> -0.0222 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.8180 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

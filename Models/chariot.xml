@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>chariot.ac</path>
+
+  <animation>
+    <name>Trolley</name>
+    <object-name>axeCA1</object-name>
+    <object-name>axeCA2</object-name>
+    <object-name>roueCA</object-name>
+    <object-name>roueCG</object-name>
+    <object-name>roueCD</object-name>
+    <object-name>armature</object-name>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>axeCA1</object-name>
+    <object-name>axeCA2</object-name>
+    <object-name>roueCA</object-name>
+    <object-name>roueCG</object-name>
+    <object-name>roueCD</object-name>
+    <object-name>armature</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <name>Trolley</name>
+    <object-name>axeCA1</object-name>
+    <object-name>axeCA2</object-name>
+    <object-name>roueCA</object-name>
+    <object-name>roueCG</object-name>
+    <object-name>roueCD</object-name>
+    <object-name>armature</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <name>Trolley</name>
+    <condition>
+      <equals>
+        <property>gear/gear/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <name>GearA</name>
+    <object-name>roueCA</object-name>
+    <object-name>axeCA2</object-name>
+  </animation>
+
+  <!-- Compression -->
+  <animation>
+    <type>rotate</type>
+    <object-name>GearA</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m> -5.185 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.940 </z-m>
+    </center>
+    <axis>
+      <x>  0.00 </x>
+      <y>  1.00 </y>
+      <z>  0.00 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueCA</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -4.702 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.362 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueCG</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.748 </x-m>
+      <y-m> -1.458 </y-m>
+      <z-m> -2.180 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueCD</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.748 </x-m>
+      <y-m>  1.458 </y-m>
+      <z-m> -2.180 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

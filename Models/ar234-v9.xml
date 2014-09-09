@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/AR-234/Models/ar234.xml</path>
+  </model>
+
+  <!-- Les roues -->
+  <model>
+    <path>Aircraft/AR-234/Models/wheels.xml</path>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/AR-234/Models/shadowV9.xml</path>
+    <offsets>
+      <x-m> -0.0222 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.8180 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -4.705 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.142 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -0.654 </x-m>
+      <y-m> -1.000 </y-m>
+      <z-m> -2.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -0.654 </x-m>
+      <y-m>  1.000 </y-m>
+      <z-m> -2.200 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
