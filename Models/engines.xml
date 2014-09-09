@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>engines.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>moteurC</object-name>
+    <object-name>cachemoteurs</object-name>
+
+    <object-name>centremoteurC</object-name>
+    <object-name>heliceCG2</object-name>
+    <object-name>heliceCG1</object-name>
+    <object-name>heliceCD1</object-name>
+    <object-name>heliceCD2</object-name>
+    <object-name>trousC</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>bruleCG</object-name>
+    <object-name>bruleCD</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>moteurC</object-name>
+    <object-name>cachemoteurs</object-name>
+
+    <object-name>centremoteurC</object-name>
+    <object-name>heliceCG2</object-name>
+    <object-name>heliceCG1</object-name>
+    <object-name>heliceCD1</object-name>
+    <object-name>heliceCD2</object-name>
+    <object-name>trousC</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>moteurC</object-name>
+    <object-name>cachemoteurs</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>bruleCG</object-name>
+    <object-name>bruleCD</object-name>
+  </animation>
+
+  <!-- Les flammes -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesG2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/flammes/flammesD2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Particules OSG -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailL2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeL2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailR2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeR2.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>bruleCG</object-name>
+    <condition>
+      <greater-than>
+        <property>controls/engines/engine[2]/throttle</property>
+        <value>0.7</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>bruleCD</object-name>
+    <condition>
+      <greater-than>
+        <property>controls/engines/engine[3]/throttle</property>
+        <value>0.7</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- Rotation des hélices des réacteurs -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceCG2</object-name>
+    <property>controls/engines/engine[2]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m> -2.933 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceCG1</object-name>
+    <property>controls/engines/engine[2]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m>  0.508 </x-m>
+      <y-m> -2.838 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceCD1</object-name>
+    <property>controls/engines/engine[3]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m> -2.933 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceCD2</object-name>
+    <property>controls/engines/engine[3]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m>  0.508 </x-m>
+      <y-m>  2.838 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

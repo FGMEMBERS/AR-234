@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>patins.ac</path>
+
+  <animation>
+    <object-name>cache</object-name>
+    <object-name>patinC</object-name>
+    <object-name>patinG</object-name>
+    <object-name>patinD</object-name>
+    <object-name>axeC</object-name>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>cache</object-name>
+    <object-name>patinC</object-name>
+    <object-name>patinG</object-name>
+    <object-name>patinD</object-name>
+    <object-name>axeC</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>cache</object-name>
+  </effect>
+
+</PropertyList>
+
