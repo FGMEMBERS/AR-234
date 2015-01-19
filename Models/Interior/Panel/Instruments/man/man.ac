@@ -8,7 +8,7 @@ name "face"
 loc 0.003781 0 -0
 data 4
 face
-texture "colors.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 82
@@ -613,7 +613,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 168
@@ -1921,7 +1921,7 @@ name "needle1"
 loc 0.003781 0 -0
 data 7
 needle1
-texture "colors.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 16
@@ -2017,7 +2017,7 @@ name "needle2"
 loc 0.003781 0 -0
 data 7
 needle2
-texture "colors.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 14
@@ -2111,7 +2111,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "colors.png"
+texture "man.png"
 texrep 1 1
 crease 30.000001
 numvert 736

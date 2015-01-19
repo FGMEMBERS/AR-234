@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="ar234-v1-jsbsim-cnf.xml"> -->
-<PropertyList include="ar234-v1-yasim-cnf.xml">
+<PropertyList include="ar234-base.xml">
 
   <sim>
 
     <description>Arado Ar 234 (with trolley - YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
 
+    <flight-model>yasim</flight-model>
+    <aero>ar234-v1-yasim</aero>
+    
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
@@ -15,7 +17,17 @@
       <model type="int">   4 </model>
     </rating>
 
+    <model>
+      <path>Aircraft/AR-234/Models/ar234-v1.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
+    <startup>
+      <splash-texture>Aircraft/AR-234/Splash/ar234-v1-splash.png</splash-texture>
+    </startup>
+    
   </sim>
 
 </PropertyList>
-

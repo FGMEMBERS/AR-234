@@ -8,7 +8,7 @@ name "face"
 loc 0.002013 0 -0
 data 4
 face
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 33
@@ -244,7 +244,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 214
@@ -1963,7 +1963,7 @@ name "hour"
 loc 0.001532 0 -0
 data 4
 hour
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 39
@@ -2245,7 +2245,7 @@ name "minute"
 loc 0.002152 0 -0
 data 6
 minute
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 31
@@ -2452,7 +2452,7 @@ name "second"
 loc 0.001601 0 -0
 data 6
 second
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 45
@@ -2749,7 +2749,7 @@ name "stop"
 loc 0.001013 0 -0
 data 4
 stop
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 10
@@ -2818,7 +2818,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "colors.png"
+texture "clock.png"
 texrep 1 1
 crease 30.000001
 numvert 736
