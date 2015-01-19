@@ -32,6 +32,7 @@ BARANGER Emmanuel
 May, 25, 2007. 
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -68,4 +69,5 @@ BARANGER Emmanuel
 25 Mai 2007.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr

@@ -14,24 +14,25 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/AR-234/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>face2</object-name>
     <object-name>needle</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
     <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
@@ -52,9 +53,9 @@
       <entry><ind> 2500 </ind><dep> 90.000 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 0.001 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m>-0.012 </z-m>
+      <x-m>  0.001 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.012 </z-m>
     </center>
     <axis>
       <x> -1 </x>

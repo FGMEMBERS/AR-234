@@ -18,20 +18,13 @@
     <object-name>intcanopytrans</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/AR-234/Models/Effects/Glass/glass</inherits-from>
     <object-name>intverriere</object-name>
     <object-name>intcanopytrans</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intverriere</object-name>
-    <object-name>intcanopytrans</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Panel -->
   <model>
     <path>Aircraft/AR-234/Models/Interior/Panel/panel.xml</path>
@@ -105,9 +98,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>intcanopytrans</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>intcanopytrans</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 85 </factor>
     <axis>
       <x1-m> -4.432 </x1-m>
@@ -120,4 +127,3 @@
   </animation>
 
 </PropertyList>
-

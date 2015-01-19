@@ -15,10 +15,10 @@
     <object-name>heliceCD1</object-name>
     <object-name>heliceCD2</object-name>
     <object-name>trousC</object-name>
-
-    <!-- Objets transparents -->
     <object-name>bruleCG</object-name>
     <object-name>bruleCD</object-name>
+    
+    <!-- Objets transparents -->
   </animation>
   
   <animation>
@@ -32,7 +32,9 @@
     <object-name>heliceCD1</object-name>
     <object-name>heliceCD2</object-name>
     <object-name>trousC</object-name>
-
+    <object-name>bruleCG</object-name>
+    <object-name>bruleCD</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -41,12 +43,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
@@ -56,15 +52,20 @@
   </effect>
 
   <animation>
-    <type>noshadow</type>
+    <type>material</type>
     <object-name>bruleCG</object-name>
     <object-name>bruleCD</object-name>
+    <emission>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
   </animation>
-
+  
   <!-- Les flammes -->
   <!-- Gauche -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammes/flammesG2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/combustionG2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m> -2.838 </y-m>
@@ -74,7 +75,7 @@
 
   <!-- Droite -->
   <model>
-    <path>Aircraft/AR-234/Models/Effects/flammes/flammesD2.xml</path>
+    <path>Aircraft/AR-234/Models/Effects/flammes/combustionD2.xml</path>
     <offsets>
       <x-m>  0.657 </x-m>
       <y-m>  2.838 </y-m>
@@ -213,4 +214,3 @@
   </animation>
 
 </PropertyList>
-

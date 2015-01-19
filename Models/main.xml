@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>ar234.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/AR-234/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>antenne</object-name>
+    <object-name>ailes</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>poignees</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
+    <object-name>moteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>periscope</object-name>
+
+    <object-name>canopy</object-name>
+    <object-name>centremoteurG</object-name>
+    <object-name>heliceG1</object-name>
+    <object-name>heliceG2</object-name>
+    <object-name>centremoteurD</object-name>
+    <object-name>heliceD1</object-name>
+    <object-name>heliceD2</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>pate</object-name>
+    <object-name>trous</object-name>
+    <object-name>cables</object-name>
+    <object-name>bruleG</object-name>
+    <object-name>bruleD</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>antenne</object-name>
+    <object-name>ailes</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>poignees</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
+    <object-name>moteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>periscope</object-name>
+
+    <object-name>canopy</object-name>
+    <object-name>centremoteurG</object-name>
+    <object-name>heliceG1</object-name>
+    <object-name>heliceG2</object-name>
+    <object-name>centremoteurD</object-name>
+    <object-name>heliceD1</object-name>
+    <object-name>heliceD2</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>pate</object-name>
+    <object-name>trous</object-name>
+    <object-name>cables</object-name>
+    <object-name>bruleG</object-name>
+    <object-name>bruleD</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <effect>
+    <!-- <inherits-from>Aircraft/AR-234/Models/Effects/BumpMap/bumpmap</inherits-from> -->
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>antenne</object-name>
+    <object-name>ailes</object-name>
+    <object-name>pitot</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>poignees</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>gouverne</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
+    <object-name>moteurG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>periscope</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/AR-234/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>bruleG</object-name>
+    <object-name>bruleD</object-name>
+    <emission>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
+  
+  <!-- Interieur -->
+  <model>
+    <usage>interior</usage>
+    <path>Aircraft/AR-234/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Les flammes -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/flammes/combustionG.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/flammes/combustionD.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Particules OSG -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailL.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m> -1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m> -7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/trail/trailR.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/smoke/smokeR.xml</path>
+    <offsets>
+      <x-m>  0.657 </x-m>
+      <y-m>  1.950 </y-m>
+      <z-m> -0.553 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m>  7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotation des hélices des réacteurs -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceG1</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m> -2.933 </x-m>
+      <y-m> -1.948 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceG2</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m>  0.508 </x-m>
+      <y-m> -1.948 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD1</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m> -2.933 </x-m>
+      <y-m>  1.948 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD2</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 100 </factor>
+    <center>
+      <x-m>  0.508 </x-m>
+      <y-m>  1.948 </y-m>
+      <z-m> -0.560 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  5.269 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.398 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>gouverne</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m> 5.548 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.811 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m> -0.441 </x1-m>
+      <y1-m> -6.726 </y1-m>
+      <z1-m>  0.090 </z1-m>
+      <x2-m> -0.152 </x2-m>
+      <y2-m> -4.113 </y2-m>
+      <z2-m>  0.077 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m> -0.152 </x1-m>
+      <y1-m>  4.113 </y1-m>
+      <z1-m>  0.077 </z1-m>
+      <x2-m> -0.441 </x2-m>
+      <y2-m>  6.726 </y2-m>
+      <z2-m>  0.090 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -50 </factor>
+    <axis>
+      <x1-m> -0.214 </x1-m>
+      <y1-m> -0.708 </y1-m>
+      <z1-m>  0.003 </z1-m>
+      <x2-m> -0.214 </x2-m>
+      <y2-m> -1.512 </y2-m>
+      <z2-m>  0.015 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -50 </factor>
+    <axis>
+      <x1-m> -0.256 </x1-m>
+      <y1-m> -2.447 </y1-m>
+      <z1-m>  0.027 </z1-m>
+      <x2-m> -0.356 </x2-m>
+      <y2-m> -4.090 </y2-m>
+      <z2-m>  0.046 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -50 </factor>
+    <axis>
+      <x1-m> -0.214 </x1-m>
+      <y1-m>  1.512 </y1-m>
+      <z1-m>  0.015 </z1-m>
+      <x2-m> -0.214 </x2-m>
+      <y2-m>  0.708 </y2-m>
+      <z2-m>  0.003 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -50 </factor>
+    <axis>
+      <x1-m> -0.356 </x1-m>
+      <y1-m>  4.090 </y1-m>
+      <z1-m>  0.046 </z1-m>
+      <x2-m> -0.256 </x2-m>
+      <y2-m>  2.447 </y2-m>
+      <z2-m>  0.027 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>bruleG</object-name>
+    <condition>
+      <greater-than>
+        <property>controls/engines/engine[0]/throttle</property>
+        <value>0.7</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>bruleD</object-name>
+    <condition>
+      <greater-than>
+        <property>controls/engines/engine[1]/throttle</property>
+        <value>0.7</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <name>FullCanopy</name>
+    <object-name>canopy</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>FullCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>FullCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 85 </factor>
+    <axis>
+      <x1-m> -4.432 </x1-m>
+      <y1-m>  0.544 </y1-m>
+      <z1-m> -0.016 </z1-m>
+      <x2-m> -5.035 </x2-m>
+      <y2-m>  0.477 </y2-m>
+      <z2-m> -0.016 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Lights -->
+  <model>
+    <path>Aircraft/AR-234/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 5.426 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 2.148 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>LeftLight</name>
+    <path>Aircraft/AR-234/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m> -7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.911 </x-m>
+      <y-m> -7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>RightLight</name>
+    <path>Aircraft/AR-234/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.901 </x-m>
+      <y-m>  7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AR-234/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.911 </x-m>
+      <y-m>  7.014 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

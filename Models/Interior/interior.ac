@@ -1,6 +1,6 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 50 trans 0.85
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 9
 OBJECT poly
@@ -8,9 +8,9 @@ name "dossier"
 loc 0 0 -0
 data 7
 dossier
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 144
 -4.665232 -0.788665 0.197413
 -4.665232 -0.788665 -0.195088
@@ -1157,9 +1157,9 @@ name "fondsiege"
 loc 0 0 -0
 data 9
 fondsiege
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 112
 -4.663252 -0.813317 0.197413
 -4.663252 -0.813317 -0.195088
@@ -2008,8 +2008,7 @@ name "intcanopytrans"
 loc 0 0 -0
 data 14
 intcanopytrans
-texrep 1 1
-crease 30.000001
+crease 180.000005
 numvert 59
 -4.497466 0.048624 0.49176
 -4.425911 0.051614 0.494342
@@ -2381,9 +2380,9 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 234
 -4.421589 -0.003449 0.529705
 -4.421589 -0.060904 0.565383
@@ -4224,8 +4223,7 @@ name "intverriere"
 loc 0 0 -0
 data 11
 intverriere
-texrep 1 1
-crease 30.000001
+crease 180.000005
 numvert 367
 -6.307886 -0.549132 0.044001
 -6.307886 -0.53876 0.037774
@@ -7045,9 +7043,9 @@ name "piedvolant"
 loc 0 0 -0
 data 10
 piedvolant
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 368
 -5.237803 -0.468733 -0.034165
 -5.237803 -0.468733 0.026458
@@ -9808,9 +9806,9 @@ name "siege"
 loc 0 0 -0
 data 5
 siege
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 520
 -4.663201 -0.772253 -0.195036
 -4.662216 -0.772253 -0.196842
@@ -13543,9 +13541,9 @@ name "tour"
 loc 0 0 -0
 data 4
 tour
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 96
 -4.421589 -0.003448 -0.529705
 -4.421589 -0.060903 -0.565383
@@ -13986,9 +13984,9 @@ name "volant"
 loc 0 0 -0
 data 6
 volant
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "interior.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4000
 -5.209301 -0.408729 0.019479
 -5.212371 -0.412864 0.023789
