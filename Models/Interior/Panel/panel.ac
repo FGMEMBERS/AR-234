@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 7
 OBJECT poly
@@ -7,9 +7,9 @@ name "arriere"
 loc 0 0 -0
 data 7
 arriere
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 1161
 -0.441389 0.167471 -0.029471
 -0.441389 0.161155 -0.034654
@@ -8955,9 +8955,9 @@ name "manetteL"
 loc 0 0 -0
 data 8
 manetteL
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 138
 0.419541 -0.126011 0.371198
 0.429303 -0.123891 0.371198
@@ -10202,9 +10202,9 @@ name "manetteR"
 loc 0 0 -0
 data 8
 manetteR
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 138
 0.422831 -0.129187 0.33877
 0.283281 -0.270004 0.33877
@@ -11449,9 +11449,9 @@ name "panel"
 loc 0 0 -0
 data 5
 panel
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 244
 -0.400605 0.28008 -0.175945
 -0.396237 0.286473 -0.175157
@@ -13395,9 +13395,9 @@ name "panelD"
 loc 0 0 -0
 data 6
 panelD
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 22
 0.927246 -0.455787 -0.255693
 0.927246 -0.455787 -0.442111
@@ -13613,9 +13613,9 @@ name "panelG"
 loc 0 0 -0
 data 6
 panelG
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 238
 0.279585 -0.179117 0.316445
 0.362688 -0.141075 0.316427
@@ -15689,9 +15689,9 @@ name "souspanel"
 loc 0 0 -0
 data 9
 souspanel
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 420
 -0.198344 0.430266 0.222107
 -0.198344 0.424808 0.217627

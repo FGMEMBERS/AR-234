@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 6
 OBJECT poly
@@ -8,8 +8,8 @@ loc 0 0 -0
 data 8
 armature
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 976
 0.7242 -1.988451 0.124834
 0.731548 -1.997921 0.130423
@@ -7397,8 +7397,8 @@ loc 0 0 -0
 data 6
 axeCA1
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 48
 -5.087594 -1.438228 0.187095
 -5.087597 -1.40312 0.105145
@@ -7780,8 +7780,8 @@ loc 0 0 -0
 data 6
 axeCA2
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 610
 -5.181683 -1.87352 0.102486
 -5.195334 -1.884864 0.102486
@@ -12817,8 +12817,8 @@ loc 0 0 -0
 data 6
 roueCA
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 802
 -4.320231 -1.977922 0.123977
 -4.253143 -2.060159 0.123977
@@ -19390,8 +19390,8 @@ loc 0 0 -0
 data 6
 roueCD
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 802
 1.244037 -1.680848 -1.296713
 1.331309 -1.787828 -1.296709
@@ -25963,8 +25963,8 @@ loc 0 0 -0
 data 6
 roueCG
 texture "texture.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 802
 1.244037 -1.680847 1.620111
 1.331309 -1.787826 1.620117

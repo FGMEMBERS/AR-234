@@ -8,7 +8,7 @@ name "ball"
 loc 0.001827 0 -0
 data 4
 ball
-texture "colors.png"
+texture "turn.png"
 texrep 1 1
 crease 30.000001
 numvert 49
@@ -392,7 +392,7 @@ name "face"
 loc 0.001827 0 -0
 data 4
 face
-texture "colors.png"
+texture "turn.png"
 texrep 1 1
 crease 30.000001
 numvert 4
@@ -414,7 +414,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "turn.png"
 texrep 1 1
 crease 30.000001
 numvert 172
@@ -1752,7 +1752,7 @@ name "needle"
 loc 0.001827 0 -0
 data 6
 needle
-texture "colors.png"
+texture "turn.png"
 texrep 1 1
 crease 30.000001
 numvert 37
@@ -2019,7 +2019,7 @@ name "visses"
 loc 0 0 -0
 data 6
 visses
-texture "colors.png"
+texture "turn.png"
 texrep 1 1
 crease 30.000001
 numvert 736

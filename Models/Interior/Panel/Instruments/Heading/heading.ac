@@ -8,7 +8,7 @@ name "boite"
 loc 0 0 -0
 data 5
 boite
-texture "colors.png"
+texture "heading.png"
 texrep 1 1
 crease 30.000001
 numvert 226
@@ -1973,7 +1973,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "heading.png"
 texrep 1 1
 crease 30.000001
 numvert 196
@@ -3402,7 +3402,7 @@ name "head"
 loc 0 0 -0
 data 4
 head
-texture "colors.png"
+texture "heading.png"
 texrep 1 1
 crease 45.000001
 numvert 64
