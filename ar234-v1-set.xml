@@ -9,7 +9,9 @@
 
     <flight-model>yasim</flight-model>
     <aero>ar234-v1-yasim</aero>
-    
+
+    <variant-of>ar234-C</variant-of>
+
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
@@ -23,11 +25,11 @@
         <file type="string">default</file>
       </livery>
     </model>
-    
+
     <startup>
       <splash-texture>Aircraft/AR-234/Splash/ar234-v1-splash.png</splash-texture>
     </startup>
-    
+
   </sim>
 
 </PropertyList>
