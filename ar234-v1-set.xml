@@ -12,6 +12,18 @@
 
     <variant-of>ar234-C</variant-of>
 
+    <tags>
+      <tag>arado</tag>
+      <tag>high-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>four-engine</tag>
+      <tag>jet</tag>
+      <tag>bomber</tag>
+      <tag>reconnaissance</tag>
+      <tag>1940s</tag>
+    </tags>
+
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
